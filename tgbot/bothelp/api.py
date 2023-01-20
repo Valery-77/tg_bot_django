@@ -1,5 +1,6 @@
 import requests
 import json
+# from api.models import BotHelp
 
 BASE_URL = 'http://127.0.0.1:8000/api'
 
@@ -28,7 +29,7 @@ def get_bothelp_list(token):
 
 
 def store_bothelp_todb(users_list):
-    url = f'{BASE_URL}/bothelp-user'
+    url = f'{BASE_URL}/bothelp-user/'
 
     # for i in users_list:
     # print(i['utmCampaign'])
@@ -42,12 +43,15 @@ def store_bothelp_todb(users_list):
                 'name': i['name'], 'phone': i['phone'], 'utmMedium': i['utmMedium'],
                 'email': i['email']}
     # print(cut_list)
+    # try:
     res = requests.post(url=url, data=cut_list)
     print(res)
+    # except
 
 
 tkn = get_bothelp_token()
 lst = get_bothelp_list(tkn)
+print(lst)
 store_bothelp_todb(lst)
 
 
