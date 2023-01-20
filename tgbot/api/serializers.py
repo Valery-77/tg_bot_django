@@ -12,5 +12,5 @@ class BotUserSerializer(serializers.ModelSerializer):
 class BotHelpSerializer(serializers.ModelSerializer):
     class Meta:
         model = BotHelp
-        fields = ('subscribed', 'createdAtб' 'u_id', 'channelName', 'channelType', 'cuid', 'utmSource', 'utmTerm',
+        fields = ('subscribed', 'createdAt' 'u_id', 'channelName', 'channelType', 'cuid', 'utmSource', 'utmTerm',
                   'utmContent', 'utmCampaign', 'name', 'phone', 'utmMedium', 'email')
