@@ -1,6 +1,8 @@
 import requests
 import json
 
+# import datetime
+
 BASE_URL = 'http://127.0.0.1:8000/api'
 
 
@@ -24,8 +26,9 @@ def create_user(registration, channel, user_id, username, first_name, last_name,
     else:
         return f'User {username} exist'
 
+
 # now = datetime.date.today()
 # print(
-#     create_user(now, 'chl', 555, 'us_name', 'f_nm', 'l_nm', 'a@a.com', '333333', 'lnk', 'u_src', 'u_cm', 'u_md', 'u_t',
+#     create_user(now, 'chl', 55775, 'us_name', 'f_nm', 'l_nm', 'a@a.com', '333333', 'lnk', 'u_src', 'u_cm', 'u_md', 'u_t',
 #                 'u_c', now)
 # )

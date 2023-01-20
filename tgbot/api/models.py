@@ -20,3 +20,23 @@ class BotUser(models.Model):
 
     def __str__(self):
         return self.username
+
+
+class BotHelp(models.Model):
+    subscribed = models.CharField(max_length=255)
+    createdAt = models.CharField(max_length=255)
+    u_id = models.CharField(max_length=255)
+    channelName = models.CharField(max_length=255)
+    channelType = models.CharField(max_length=255)
+    cuid = models.CharField(max_length=255)
+    utmSource = models.CharField(max_length=255)
+    utmTerm = models.CharField(max_length=255)
+    utmContent = models.CharField(max_length=255)
+    utmCampaign = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
+    phone = models.CharField(max_length=255)
+    utmMedium = models.CharField(max_length=255)
+    email = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name

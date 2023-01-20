@@ -14,8 +14,6 @@ async def record_data(msg: types.Message):
     resp = create_user(now, 'chn?', msg.from_user.id, msg.from_user.username, msg.from_user.first_name,
                        msg.from_user.last_name, 'mail@mail.com', 'mob_number?', 'link?', 'utm_src?', 'utm_camp?',
                        'utm_med?', 'utm_term?', 'utm_cont?', now)
-    ms = msg.contact.first_name
-    print(ms)
     await msg.answer(resp)  # ECHO
 
 

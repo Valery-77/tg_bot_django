@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'bot',
-    'bot.main'
+    'bothelp'
 ]
 
 MIDDLEWARE = [
